@@ -64,12 +64,44 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground remove-scrollbar;
+  }
+  .padX {
+    @apply px-8 max-md:px-6 max-sm:px-4;
+  }
+  .padY {
+    @apply py-12 max-lg:py-8 max-sm:py-6;
+  }
+  p {
+    @apply leading-[1.3] !important;
   }
 }
 
 @layer utilities {
   .font-sans {
     font-family: var(--font-geist-sans);
+  }
+}
+
+@layer utilities {
+  /* Remove scrollbar */
+  .remove-scrollbar::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    border-radius: 0px;
+  }
+
+  .remove-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .remove-scrollbar::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 0px;
+  }
+
+  .remove-scrollbar::-webkit-scrollbar-thumb:hover {
+    /* background: #1e2238; */
+    background: transparent;
   }
 }
