@@ -1,7 +1,6 @@
 import {
   ArrowLeft,
   Clock,
-  Fingerprint,
   Stethoscope,
   Wallet,
 } from 'lucide-react';
@@ -12,10 +11,7 @@ import {
   AlertDialogAction,
   AlertDialogCancel,
   AlertDialogContent,
-  AlertDialogDescription,
   AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogTitle,
   AlertDialogTrigger,
 } from '@/components/ui/alert-dialog';
 
